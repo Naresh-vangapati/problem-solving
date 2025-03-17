@@ -370,7 +370,7 @@
 # 1.Take input of two numbers from the user and find the LCM of those numbers
 
 
-# Ans:- num1=int(input('enter a num1: ')) 
+# num1=int(input('enter a num1: ')) 
 # num2=int(input('enter a num2: ')) 
 # greater=max(num1,num2) 
 # while True: 
@@ -385,7 +385,7 @@
 # 2.Take input of two numbers from the user and find the GCD of those numbers 
 
 
-# Ans:- num1=int(input('enter a num1: ')) 
+# num1=int(input('enter a num1: ')) 
 # num2=int(input('enter a num2: ')) 
 # n1=num1 
 # n2=num2 
@@ -397,7 +397,7 @@
 # 3.Print next prime and previous prime of a given number 
 
 
-# Ans:-n=29 
+# n=29 
 # n1=n 
 # count=0 
 # while count==0: 
@@ -702,20 +702,142 @@
 #             max_value = j
 # print("minimum value in the list is",min_value)
 # print("max value in the list is",max_value)           
-# ------------------------------------------------------------------------------------------------------------------- 
-    
+# -------------------------------------------------------------------------------------------------------------------
+
+# def max_min_missing_num(input_num):
+#     list =[]
+#     temp = input_num
+#     while temp >0:
+#         digit = temp % 10
+#         list.append(digit)
+#         temp //= 10
+#     list_min = min(list)
+#     list_max = max(list)  
+#     for i in range(list_min,list_max+1):
+#         if i not in list:
+#             print(i)
+#     return    
+# num =34571     
+# max_min_missing_num(num)
+# ----------------------------------------------------------------------------------------------------------------------
+
+# list1 = [-4,-2,6,10,12] 
+# min_value = list1[0]
+# max_value = list1[0]
+# for i in list1:
+#     if i < min_value:
+#         min_value = i
+#     elif i > max_value:
+#         max_value = i
+# list = []        
+# for j in range(min_value,max_value +1):
+#         if j not in list and j % 2 == 0:
+#             print(j)        
+# -----------------------------------------------------------------------------------------------------------------------
+          
+
+# list1 = [32,24,40,8,6,10,12]
+# temp1 = sorted(list1)
+# print(list1)
+# print(temp1)
+# output = []
+# for i in list1:
+#     res = temp1.index(i) + 1
+#     output.append(res)
+# print(output)    
+
+# _________________________________________________________________________________________________________________
+
+# list = [-4,-2,22,3,44]
+# first_max = float('-inf') 
+# for i in list:
+#     if i > first_max:
+#         first_max = i
+# print(first_max)  
+
+
+# second_max = float('-inf')
+# for i in list:
+#     if i != first_max and i > second_max:
+#         second_max = i
+# print(second_max)      
+
+                                        # OR
+
+# Recursion:- 
+# 1.function it self calls is called Recursion.
+# 2. base condition giving is very important to execute when we dont give base condition then it executes infinite times
+
+# EX:- Factorial of a number by using Recursion
+
+# def fact(n):
+    # if n == 1 or n == 0:
+    #     return 1
+#     return n * fact(n-1)
+# print(fact(4))
+
+
+# def printer(n):
+#     if n ==1 or n == 0:
+#         return
+#     print(n)
+#     printer(n-1)
+#     print(n)
+# printer(10)    
 
 
 
 
+# print n numbers by using n  numbers
+
+# def print_n_num(n):
+#     if n == 0:
+#         return
+#     print_n_num(n-1)
+#     print(n)
+# print_n_num(10)    
+
+
+# print nth no of fibanocci series
+
+# def fib(n):
+#     if n <= 1:
+#         return n
+#     return fib(n-1) + fib(n-2)  
+# print(fib(10)) 
+
+
+#print exponent of a number by using recursion
+
+
+# def exponent(n,k):
+#     if k == 0 :
+#         return 1
+#     return n ** exponent(n, k-1)
+# print(exponent(3,2))
+
+
+# sum of n numbers by using Recursion
+
+# def sum_of_n_num(n):
+#     if n ==0:
+#         return 0
+#     return n + sum_of_n_num(n-1)
+# print(sum_of_n_num(10))
 
 
 
+# check if string is palindrome
 
+# str1 ='MALAYALAM'
+# def check_palindrome(input_str):
+#     if len(input_str) <= 1:
+#         return True
+#     return (input_str[0] == input_str[-1]) and check_palindrome(input_str[1:-1])
+# print(check_palindrome(str1))
 
-    
-   
-            
+ 
+
 
    
 
