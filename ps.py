@@ -836,7 +836,118 @@
 #     return (input_str[0] == input_str[-1]) and check_palindrome(input_str[1:-1])
 # print(check_palindrome(str1))
 
+
+# sum of digits using recursion
+
+# num1 = 54672
+# def find_sum(input_num):
+#     if input_num <= 0:
+#         return 0
+#     return(input_num % 10) + find_sum(input_num // 10)
+# print(find_sum(num1))
+
+
+# reverse a string using recursion
+
+# str1 = 'desktop'
+# def rev_string(input_num):
+#     if len(input_num) <= 1:
+#         return input_num
+#     return input_num[-1] + rev_string(input_num[0:-1])
+# print(rev_string(str1))
+    
+
+# find max element  in a list using recursion
+
+
+# list1 = [-1,2,3,53,45,95]
+# def find_max_value(input_list):
+#     if len(input_list) == 0:
+#         return 'No Max'
+    
+#     if len(input_list) == 1:
+#         return input_list[0]
+
+#     rem_max = find_max_value(input_list[1 : ])
+#     # return input_list[0] if input_list[0] > rem_max else rem_max
+#     #                     OR
+
+#     if input_list[0] > rem_max:
+#         return input_list[0]
+#     else:
+#         return rem_max
+# print(find_max_value(list1))
  
+
+
+# printing a list in reverse order using recursion
+
+# list1 = [1,3,5,6,7,8]
+# def rev_list(input_list):
+#     if input_list <= 1:
+#         return input_list
+#     return len(input_list)-1 + rev_list(input_list[0 :])
+# print(rev_list(list1))
+    
+
+
+#                                                      Dictionary Problems
+
+# find how many times the  keys return in the list
+
+# list =[1,2,'string',3,2,2,1,3,4]
+# freq ={}
+# for i in list:
+#     if i not in freq:
+#         freq[i] =1
+#     else:
+#         freq[i] += 1
+# print(freq)        
+
+# print duplicates in dictionary and unique values in dictionary by using above freq dictionary
+
+# for i,j in freq.items():
+#     if j == 1:
+#         print(i,"is unique")
+#     else :
+#         print(i,"it have duplicates") 
+
+
+
+# print the lenth of strings in dictionary 
+
+# list = ['naresh','gopal','midhilesh']
+# freq = {}
+# for i in list:
+#     freq[i] = len(i)
+# print(freq)    
+
+
+# Given a string, return a dictionary where keys are characters and values are their occurrence.
+
+# str1 = 'MANMADHAN'
+# freq = {}
+# for i in str1.lower():
+#     if i not in freq:
+#         freq[i] = 1
+#     else:
+#         freq[i] += 1
+# print(freq)            
+
+
+# Given two lists of equal length, create a dictionary where one list contains keys and the other contains values.
+
+# list1 = ['car1','car2','car3']
+# list2 = ['tesla','fortuner','xuv700']
+# output = {}
+# for i in range (len(list1)):
+#         output [list1[i]] = list2[i]
+# print(output)        
+
+
+
+
+
 
 
    
